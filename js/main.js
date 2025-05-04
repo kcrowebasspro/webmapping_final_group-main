@@ -170,10 +170,6 @@ function setEnumerationUnits(florenceCounties, ncZips, map, path, colorScale){
        
        // Remove bar highlight
        d3.selectAll(".bar").classed("selected", false);
-   })
-   .on("click", function(event, d) {
-       // Handle click event (e.g., show more details)
-       console.log("Clicked on: ", d.properties[expressed]);
    });
 
    // add style descriptor to each path
@@ -190,7 +186,7 @@ function setEnumerationUnits(florenceCounties, ncZips, map, path, colorScale){
        .attr("d", path)
        .style("fill", "none")
        .style("stroke", "#581845")
-       .style("stroke-width", "1px");
+       .style("stroke-width", "1.5px");
 
 };
 
@@ -275,10 +271,6 @@ function setChart(csvData, colorScale){
         
         // Remove bar highlight
         d3.selectAll(".bar").classed("selected", false);
-    })
-    .on("click", function(event, d) {
-        // Handle click event (e.g., show more details)
-        console.log("Clicked on: ", d[expressed]);
     });
 
    //add style descriptor to each rect
@@ -410,8 +402,8 @@ function formatValue(value, dataType, isCompact = false) {
            : d3.format(",")(value) + "%" ;
    } else if (dataType === "claimSeverity") {
        return isCompact 
-           ? d3.format(".1s")(value) + "%"  
-           : d3.format(",")(value) + "%" ;
+            ? "$" + d3.format(".2s")(value) 
+            : "$" + d3.format(",")(value);
    } else if (dataType === "claimFrequency") {
        return isCompact 
            ? d3.format(".1s")(value) + "%"  
