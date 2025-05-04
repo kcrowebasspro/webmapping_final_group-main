@@ -18,7 +18,7 @@
 }
 
 .zipCodes {
-    stroke: #000;
+    stroke: #7d7d7d;
     stroke-width: 0.5px;
     stroke-linecap: round;
 }
@@ -31,12 +31,12 @@
 .chart {
     background-color: rgba(128,128,128,.2);
     border: medium solid #999;
-    float: right;
-    margin: 10px 20px 0 0;
+    float: left;
+    margin: 10px 0 0 20px;
 }
 .chartTitle {
     font-family: sans-serif;
-    font-size: 0.85em;
+    font-size: 1.25em;
     font-weight: bold;
 }
 .chartBackground {
