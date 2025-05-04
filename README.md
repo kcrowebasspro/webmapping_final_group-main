@@ -24,9 +24,11 @@ Goals:
 
 1. Persona/Scenario
 
-The persona should include a description of a prototypical, target user and includes discussion of their interests and responsibilities (e.g., their job description if a professional/scientist; their motivation if part of the general public), with a specific focus on their key needs, expertise levels (across domains and technologies), and motivation. Your description of needs should connect directly to lecture discussion of goals, objectives, operands, and insights: in other words, describe their overarching goals, their primary tasks (objectives+operands), and key insights. You do not need to support all potential goals/tasks/insights, but make clear in your discussion which you believe you need to emphasize in your conceptual design.
+The audience I'm targeting are potential home buyers in the state of North Carolina. Homeowner's insurance premiums are rising quickly and taking up increasinly larger portions of households' monthly payments. When shopping for a new home, a buyer will want to know if that home is in an area where rates have increased significantly. 
 
-The scenario then walks us through a hypothetical interaction session with your proposed interactive map, working through multiple stages of interaction loops. As you describe your scenario, relate the proposed functionality (representation designs and interaction operators) to user objectives using terminology from lecture. Your persona and scenario combined are limited to 1-page, single-spaced in the draft (although may grow beyond this in the final submission given discussion).
+The scenario of use is a potential buyer coming to the site to check the information on average premiums, how often homes in the area made claims against their insurance, and how much insurance companies lost in each ZIP code relative to the premiums paid. 
+
+On load, the page will have the average premiums for 2022. There will be text laying out what the users can see on the map, definition of the variables, and suggestions for searching the map and interpreting results. 
 
 2. Requirements Document
 
